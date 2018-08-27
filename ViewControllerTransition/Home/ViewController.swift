@@ -34,11 +34,19 @@ class ViewController: UIViewController {
 
     func configureTableView() {
         
+        
         tableView = UITableView(frame: view.bounds, style: .plain)
         tableView.dataSource = dataSource
         tableView.delegate = self
+        tableView.clipsToBounds = true
         tableView.register(TitleCell.self, forCellReuseIdentifier: "\(TitleCell.self)")
+        tableView.tableFooterView = UIView()
         view.addSubview(tableView)
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            // Fallback on earlier versions
+        }
     }
 
 }
