@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     var tableView: UITableView!
     
-    var titles: [String] = ["alpha transition"] {
+    var titles: [String] = ["alpha transition", "Apple Music"] {
         didSet {
             dataSource.dataSource = titles
             tableView.reloadData()
@@ -48,9 +48,20 @@ extension ViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
+            let transition = ModalTransition()
+            self.transitioningDelegate = transition
             let controller = AlphaAnimatorViewController()
+//            controller.modalPresentationStyle = .fullScreen
             controller.modalPresentationStyle = .custom
-            controller.transitioningDelegate = self
+            controller.transitioningDelegate = transition
+            present(controller, animated: true, completion: nil)
+        case 1:
+            let transition = ModalTransition()
+            self.transitioningDelegate = transition
+            let controller = AppleMusicController()
+            controller.modalPresentationStyle = .custom
+            controller.transitioningDelegate = transition
+            controller.transition = transition
             present(controller, animated: true, completion: nil)
         default:
             break
@@ -58,15 +69,3 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-
-extension ViewController: UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        let animator = BaseAnimator()
-        animator.isPresented = true
-        return animator
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return BaseAnimator()
-    }
-}

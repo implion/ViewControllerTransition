@@ -12,13 +12,17 @@
 		782CB99120AD4C0900143E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782CB98F20AD4C0900143E0B /* Main.storyboard */; };
 		782CB99320AD4C0900143E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782CB99220AD4C0900143E0B /* Assets.xcassets */; };
 		782CB99620AD4C0900143E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782CB99420AD4C0900143E0B /* LaunchScreen.storyboard */; };
-		782CB99F20AD507400143E0B /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB99E20AD507400143E0B /* Animator.swift */; };
+		782CB99F20AD507400143E0B /* ModalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB99E20AD507400143E0B /* ModalAnimator.swift */; };
 		782CB9A120AD58F500143E0B /* BaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A020AD58F500143E0B /* BaseAnimator.swift */; };
 		782CB9A320AEC4F200143E0B /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A220AEC4F200143E0B /* TableViewDataSource.swift */; };
 		782CB9A620AFF1F000143E0B /* AlphaAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A520AFF1F000143E0B /* AlphaAnimatorViewController.swift */; };
 		782CB9A820B00FDC00143E0B /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A720B00FDC00143E0B /* TitleCell.swift */; };
 		782CB9AA20B011C200143E0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782CB9A920B011C200143E0B /* Default-568h@2x.png */; };
 		782CB9AC20B0123700143E0B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 782CB9AB20B0123700143E0B /* Info.plist */; };
+		EF518547212695E400724A4A /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF518546212695E400724A4A /* DetailController.swift */; };
+		EF63F6812133D4F000CD6A5B /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6802133D4F000CD6A5B /* ModalTransition.swift */; };
+		EF63F6842133DE6200CD6A5B /* AppleMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */; };
+		EFD0A272212FFEFC0074BC4A /* KeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0A271212FFEFC0074BC4A /* KeyframeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +32,17 @@
 		782CB99020AD4C0900143E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		782CB99220AD4C0900143E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782CB99520AD4C0900143E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		782CB99E20AD507400143E0B /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		782CB99E20AD507400143E0B /* ModalAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimator.swift; sourceTree = "<group>"; };
 		782CB9A020AD58F500143E0B /* BaseAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnimator.swift; sourceTree = "<group>"; };
 		782CB9A220AEC4F200143E0B /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		782CB9A520AFF1F000143E0B /* AlphaAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAnimatorViewController.swift; sourceTree = "<group>"; };
 		782CB9A720B00FDC00143E0B /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		782CB9A920B011C200143E0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		782CB9AB20B0123700143E0B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF518546212695E400724A4A /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		EF63F6802133D4F000CD6A5B /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicController.swift; sourceTree = "<group>"; };
+		EFD0A271212FFEFC0074BC4A /* KeyframeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyframeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +76,16 @@
 		782CB98A20AD4C0900143E0B /* ViewControllerTransition */ = {
 			isa = PBXGroup;
 			children = (
+				EFD0A270212FFEFC0074BC4A /* Aimation */,
+				EFD0A24F212F9CE80074BC4A /* Interaction */,
 				782CB9AB20B0123700143E0B /* Info.plist */,
-				782CB9A420AEC4FA00143E0B /* SupportFile */,
-				782CB99D20AD505600143E0B /* Animator */,
 				782CB98B20AD4C0900143E0B /* AppDelegate.swift */,
-				782CB98D20AD4C0900143E0B /* ViewController.swift */,
-				782CB9A720B00FDC00143E0B /* TitleCell.swift */,
-				782CB9A520AFF1F000143E0B /* AlphaAnimatorViewController.swift */,
 				782CB98F20AD4C0900143E0B /* Main.storyboard */,
-				782CB9A220AEC4F200143E0B /* TableViewDataSource.swift */,
+				782CB9A420AEC4FA00143E0B /* SupportFile */,
+				EFFF5D92211D864C00EEE719 /* Home */,
+				782CB99D20AD505600143E0B /* Animator */,
+				EFFF5D91211D837100EEE719 /* Modal */,
+				EF63F6822133DE3200CD6A5B /* AppleMusic */,
 			);
 			path = ViewControllerTransition;
 			sourceTree = "<group>";
@@ -84,8 +93,9 @@
 		782CB99D20AD505600143E0B /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				782CB99E20AD507400143E0B /* Animator.swift */,
+				782CB99E20AD507400143E0B /* ModalAnimator.swift */,
 				782CB9A020AD58F500143E0B /* BaseAnimator.swift */,
+				EF63F6802133D4F000CD6A5B /* ModalTransition.swift */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
@@ -97,6 +107,48 @@
 				782CB99220AD4C0900143E0B /* Assets.xcassets */,
 			);
 			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		EF63F6822133DE3200CD6A5B /* AppleMusic */ = {
+			isa = PBXGroup;
+			children = (
+				EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */,
+			);
+			path = AppleMusic;
+			sourceTree = "<group>";
+		};
+		EFD0A24F212F9CE80074BC4A /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
+		EFD0A270212FFEFC0074BC4A /* Aimation */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0A271212FFEFC0074BC4A /* KeyframeAnimation.swift */,
+			);
+			path = Aimation;
+			sourceTree = "<group>";
+		};
+		EFFF5D91211D837100EEE719 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				782CB9A520AFF1F000143E0B /* AlphaAnimatorViewController.swift */,
+				EF518546212695E400724A4A /* DetailController.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		EFFF5D92211D864C00EEE719 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				782CB98D20AD4C0900143E0B /* ViewController.swift */,
+				782CB9A720B00FDC00143E0B /* TitleCell.swift */,
+				782CB9A220AEC4F200143E0B /* TableViewDataSource.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,12 +225,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF518547212695E400724A4A /* DetailController.swift in Sources */,
 				782CB9A620AFF1F000143E0B /* AlphaAnimatorViewController.swift in Sources */,
+				EFD0A272212FFEFC0074BC4A /* KeyframeAnimation.swift in Sources */,
 				782CB9A820B00FDC00143E0B /* TitleCell.swift in Sources */,
-				782CB99F20AD507400143E0B /* Animator.swift in Sources */,
+				782CB99F20AD507400143E0B /* ModalAnimator.swift in Sources */,
 				782CB98E20AD4C0900143E0B /* ViewController.swift in Sources */,
 				782CB98C20AD4C0900143E0B /* AppDelegate.swift in Sources */,
 				782CB9A320AEC4F200143E0B /* TableViewDataSource.swift in Sources */,
+				EF63F6812133D4F000CD6A5B /* ModalTransition.swift in Sources */,
+				EF63F6842133DE6200CD6A5B /* AppleMusicController.swift in Sources */,
 				782CB9A120AD58F500143E0B /* BaseAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78PL65G5H;
 				INFOPLIST_FILE = ViewControllerTransition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wsl.cn.ViewControllerTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78PL65G5H;
 				INFOPLIST_FILE = ViewControllerTransition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wsl.cn.ViewControllerTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";

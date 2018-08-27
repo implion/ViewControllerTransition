@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlphaAnimatorViewController: UIViewController {
+class AlphaAnimatorViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     var button: UIButton = UIButton(type: .custom)
 
@@ -17,6 +17,8 @@ class AlphaAnimatorViewController: UIViewController {
 
         view.backgroundColor = .red
         configureView()
+        
+        
         // Do any additional setup after loading the view.
     }
 
