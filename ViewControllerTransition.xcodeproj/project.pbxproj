@@ -22,6 +22,8 @@
 		EF518547212695E400724A4A /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF518546212695E400724A4A /* DetailController.swift */; };
 		EF63F6812133D4F000CD6A5B /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6802133D4F000CD6A5B /* ModalTransition.swift */; };
 		EF63F6842133DE6200CD6A5B /* AppleMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */; };
+		EF63F6862134DD2900CD6A5B /* MaskTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6852134DD2900CD6A5B /* MaskTransition.swift */; };
+		EF63F6892134E35B00CD6A5B /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6882134E35B00CD6A5B /* MaskViewController.swift */; };
 		EFD0A272212FFEFC0074BC4A /* KeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0A271212FFEFC0074BC4A /* KeyframeAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		EF518546212695E400724A4A /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		EF63F6802133D4F000CD6A5B /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
 		EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicController.swift; sourceTree = "<group>"; };
+		EF63F6852134DD2900CD6A5B /* MaskTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskTransition.swift; sourceTree = "<group>"; };
+		EF63F6882134E35B00CD6A5B /* MaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
 		EFD0A271212FFEFC0074BC4A /* KeyframeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyframeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,7 @@
 				EFFF5D92211D864C00EEE719 /* Home */,
 				782CB99D20AD505600143E0B /* Animator */,
 				EFFF5D91211D837100EEE719 /* Modal */,
+				EF63F6872134E31900CD6A5B /* Mask */,
 				EF63F6822133DE3200CD6A5B /* AppleMusic */,
 			);
 			path = ViewControllerTransition;
@@ -96,6 +101,7 @@
 				782CB99E20AD507400143E0B /* ModalAnimator.swift */,
 				782CB9A020AD58F500143E0B /* BaseAnimator.swift */,
 				EF63F6802133D4F000CD6A5B /* ModalTransition.swift */,
+				EF63F6852134DD2900CD6A5B /* MaskTransition.swift */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
@@ -115,6 +121,14 @@
 				EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */,
 			);
 			path = AppleMusic;
+			sourceTree = "<group>";
+		};
+		EF63F6872134E31900CD6A5B /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				EF63F6882134E35B00CD6A5B /* MaskViewController.swift */,
+			);
+			path = Mask;
 			sourceTree = "<group>";
 		};
 		EFD0A24F212F9CE80074BC4A /* Interaction */ = {
@@ -231,10 +245,12 @@
 				782CB9A820B00FDC00143E0B /* TitleCell.swift in Sources */,
 				782CB99F20AD507400143E0B /* ModalAnimator.swift in Sources */,
 				782CB98E20AD4C0900143E0B /* ViewController.swift in Sources */,
+				EF63F6862134DD2900CD6A5B /* MaskTransition.swift in Sources */,
 				782CB98C20AD4C0900143E0B /* AppDelegate.swift in Sources */,
 				782CB9A320AEC4F200143E0B /* TableViewDataSource.swift in Sources */,
 				EF63F6812133D4F000CD6A5B /* ModalTransition.swift in Sources */,
 				EF63F6842133DE6200CD6A5B /* AppleMusicController.swift in Sources */,
+				EF63F6892134E35B00CD6A5B /* MaskViewController.swift in Sources */,
 				782CB9A120AD58F500143E0B /* BaseAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

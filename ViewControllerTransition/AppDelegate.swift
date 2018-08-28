@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     fileprivate func launch() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
     }
 
 

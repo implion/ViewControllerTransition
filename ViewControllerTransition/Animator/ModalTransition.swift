@@ -74,16 +74,13 @@ extension ModalTransition: UIViewControllerAnimatedTransitioning {
         guard let toViewController = transitionContext.viewController(forKey: .to) else { return }
         
         let containerView = transitionContext.containerView
-        let fromView = transitionContext.view(forKey: .from) ?? fromViewController.view!
         let toView = transitionContext.view(forKey: .to) ?? toViewController.view!
         var finalFrame = transitionContext.finalFrame(for: toViewController)
         
         let scalaFactor = presentingScalaFactor
         
         var presentedViewController = toViewController
-        
-        fromView.frame = transitionContext.initialFrame(for: fromViewController)
-        toView.frame = transitionContext.finalFrame(for: toViewController)
+        var presentingViewController = fromViewController
         
         let duration = transitionDuration(using: transitionContext)
         
@@ -94,10 +91,12 @@ extension ModalTransition: UIViewControllerAnimatedTransitioning {
             finalFrame.origin.y += presentedOffsetY
             toView.frame = CGRect(x: 0, y: finalFrame.height, width: finalFrame.width, height: finalFrame.height)
             containerView.addSubview(toView)
+            presentingViewController = fromViewController
             presentedViewController = toViewController
         } else {
-            finalFrame = transitionContext.finalFrame(for: fromViewController)
-            transformScala = CGAffineTransform(scaleX: 1, y: 1)
+            finalFrame = CGRect(x: 0, y: finalFrame.height, width: finalFrame.width, height: finalFrame.height)
+            transformScala = CGAffineTransform.identity
+            presentingViewController = toViewController
             presentedViewController = fromViewController
         }
         
@@ -107,8 +106,12 @@ extension ModalTransition: UIViewControllerAnimatedTransitioning {
                        initialSpringVelocity: 10,
                        options: .allowUserInteraction,
                        animations: {
-                        fromView.transform = transformScala
+                        presentingViewController.view.transform = transformScala
                         presentedViewController.view.frame = finalFrame
+                        if !self.isPresenting {
+                            presentingViewController.view.transform = CGAffineTransform.identity
+                            presentingViewController.view.frame = transitionContext.finalFrame(for: toViewController)
+                        }
         }, completion: { _ in
             transitionContext.completeTransition(true)
         })
