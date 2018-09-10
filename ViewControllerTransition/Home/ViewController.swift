@@ -13,7 +13,10 @@ class ViewController: UIViewController {
     var tableView: UITableView!
     var button: UIButton!
     
-    var titles: [String] = ["alpha transition", "Apple Music"] {
+    let transition = FlipTransition()
+
+    
+    var titles: [String] = ["alpha transition", "Apple Music", "list"] {
         didSet {
             dataSource.dataSource = titles
             tableView.reloadData()
@@ -60,6 +63,7 @@ class ViewController: UIViewController {
         button.setTitle("+", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 40)
         button.backgroundColor = .red
+        button.setTitleColor(.white, for: .normal)
         button.frame = CGRect(x: (view.bounds.width - 66) / 2, y: view.bounds.height - 66, width: 66, height: 66)
         button.addTarget(self, action: #selector(maskTransition), for: .touchUpInside)
         button.layer.cornerRadius = 33
@@ -67,7 +71,7 @@ class ViewController: UIViewController {
     }
 
     @objc func maskTransition() {
-        let transition = MaskTransition(button)
+        let transition = MaskTransition(button, shape: .circle)
         let controller = MaskViewController()
         self.navigationController?.delegate = transition
         self.navigationController?.pushViewController(controller, animated: true)
@@ -79,11 +83,10 @@ extension ViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
-            let transition = ModalTransition()
             self.transitioningDelegate = transition
             let controller = AlphaAnimatorViewController()
-//            controller.modalPresentationStyle = .fullScreen
-            controller.modalPresentationStyle = .custom
+            controller.modalPresentationStyle = .fullScreen
+            controller.transition = transition
             controller.transitioningDelegate = transition
             present(controller, animated: true, completion: nil)
         case 1:
@@ -94,6 +97,9 @@ extension ViewController: UITableViewDelegate {
             controller.transitioningDelegate = transition
             controller.transition = transition
             present(controller, animated: true, completion: nil)
+        case 2:
+            let controller = OrderListController()
+            self.navigationController?.pushViewController(controller, animated: true)
         default:
             break
         }

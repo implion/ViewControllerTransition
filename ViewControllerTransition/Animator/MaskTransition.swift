@@ -12,11 +12,18 @@ import UIKit
 
 class MaskTransition: NSObject {
     
+    enum Shape {
+        case circle
+        case square
+    }
+    
     var operation: UINavigationControllerOperation = .push
     var transitionContext: UIViewControllerContextTransitioning?
     let maskView: UIView
-    init(_ mask: UIView) {
+    let shape: Shape
+    init(_ mask: UIView, shape: Shape) {
         maskView = mask
+        self.shape = shape
     }
 }
 
@@ -29,10 +36,6 @@ extension MaskTransition: UIViewControllerAnimatedTransitioning {
         let containerView = transitionContext.containerView
         let fromView = transitionContext.view(forKey: .from) ?? fromViewController.view!
         let toView = transitionContext.view(forKey: .to) ?? toViewController.view!
-//        var finalFrame = transitionContext.finalFrame(for: toViewController)
-//
-//        var pushViewController = fromViewController
-//        var popViewController = toViewController
         
         let duration = transitionDuration(using: transitionContext)
         containerView.addSubview(fromView)
@@ -52,16 +55,13 @@ extension MaskTransition: UIViewControllerAnimatedTransitioning {
         }
         
         let radius = sqrt(pow(endPoint.x - maskView.center.x, 2) + pow(endPoint.y - maskView.center.y, 2))
-        let pushView = fromViewController.view!
-//        let fromeRect = pushView.convert(maskView.frame, to: nil)
-//        let toRect =  CGRect(origin: endPoint, size: CGSize(width: radius, height: radius))
-//        let fromPath = UIBezierPath(roundedRect: fromeRect, cornerRadius: maskView.layer.cornerRadius)
-//        let toPath = UIBezierPath(roundedRect: toRect, cornerRadius: radius/2)
-        let fromPath = UIBezierPath(ovalIn: maskView.frame)
-        let toPath = UIBezierPath(ovalIn: maskView.frame.insetBy(dx: -radius, dy: -radius))
+        
+        let fromeRect = maskView.convert(maskView.bounds, to: nil)
+        let fromPath = shape == .circle ? UIBezierPath(ovalIn: fromeRect) : UIBezierPath(roundedRect: fromeRect, cornerRadius: 12)
+        let factor = toView.bounds.height / fromeRect.height
+        let toPath = shape == .circle ? UIBezierPath(ovalIn: fromeRect.insetBy(dx: -radius, dy: -radius)) : UIBezierPath(roundedRect: toView.frame, cornerRadius: 12 * factor)
         let layer = CAShapeLayer()
         layer.path = toPath.cgPath
-//        layer.fillColor = UIColor.red.cgColor
         toViewController.view.layer.mask = layer
         
         let pathAnimation = CABasicAnimation(keyPath: "path")
@@ -75,7 +75,7 @@ extension MaskTransition: UIViewControllerAnimatedTransitioning {
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 1
+        return 0.5
     }
 }
 

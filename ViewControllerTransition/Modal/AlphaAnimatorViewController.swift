@@ -8,13 +8,16 @@
 
 import UIKit
 
-class AlphaAnimatorViewController: UIViewController, UIViewControllerTransitioningDelegate {
+class AlphaAnimatorViewController: UIViewController {
     
     var button: UIButton = UIButton(type: .custom)
 
+    var transition: FlipTransition?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        transitioningDelegate = transition
         view.backgroundColor = .red
         configureView()
         

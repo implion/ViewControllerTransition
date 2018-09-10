@@ -13,17 +13,21 @@
 		782CB99320AD4C0900143E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782CB99220AD4C0900143E0B /* Assets.xcassets */; };
 		782CB99620AD4C0900143E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782CB99420AD4C0900143E0B /* LaunchScreen.storyboard */; };
 		782CB99F20AD507400143E0B /* ModalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB99E20AD507400143E0B /* ModalAnimator.swift */; };
-		782CB9A120AD58F500143E0B /* BaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A020AD58F500143E0B /* BaseAnimator.swift */; };
 		782CB9A320AEC4F200143E0B /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A220AEC4F200143E0B /* TableViewDataSource.swift */; };
 		782CB9A620AFF1F000143E0B /* AlphaAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A520AFF1F000143E0B /* AlphaAnimatorViewController.swift */; };
 		782CB9A820B00FDC00143E0B /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CB9A720B00FDC00143E0B /* TitleCell.swift */; };
 		782CB9AA20B011C200143E0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782CB9A920B011C200143E0B /* Default-568h@2x.png */; };
-		782CB9AC20B0123700143E0B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 782CB9AB20B0123700143E0B /* Info.plist */; };
 		EF518547212695E400724A4A /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF518546212695E400724A4A /* DetailController.swift */; };
 		EF63F6812133D4F000CD6A5B /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6802133D4F000CD6A5B /* ModalTransition.swift */; };
 		EF63F6842133DE6200CD6A5B /* AppleMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */; };
 		EF63F6862134DD2900CD6A5B /* MaskTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6852134DD2900CD6A5B /* MaskTransition.swift */; };
 		EF63F6892134E35B00CD6A5B /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63F6882134E35B00CD6A5B /* MaskViewController.swift */; };
+		EF64F5BF21363B2800854F27 /* OrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64F5BE21363B2800854F27 /* OrderListController.swift */; };
+		EF64F5C221363C1A00854F27 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64F5C021363C1A00854F27 /* OrderCell.swift */; };
+		EF64F5C321363C1A00854F27 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF64F5C121363C1A00854F27 /* OrderCell.xib */; };
+		EFAD53DF21378ADE002AA253 /* UIView+Appearce.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAD53DE21378ADE002AA253 /* UIView+Appearce.swift */; };
+		EFAD53E121378F70002AA253 /* OrderDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAD53E021378F70002AA253 /* OrderDetailController.swift */; };
+		EFAD53E32137D07F002AA253 /* FlipTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAD53E22137D07F002AA253 /* FlipTransition.swift */; };
 		EFD0A272212FFEFC0074BC4A /* KeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0A271212FFEFC0074BC4A /* KeyframeAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +39,6 @@
 		782CB99220AD4C0900143E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782CB99520AD4C0900143E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		782CB99E20AD507400143E0B /* ModalAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimator.swift; sourceTree = "<group>"; };
-		782CB9A020AD58F500143E0B /* BaseAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnimator.swift; sourceTree = "<group>"; };
 		782CB9A220AEC4F200143E0B /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		782CB9A520AFF1F000143E0B /* AlphaAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAnimatorViewController.swift; sourceTree = "<group>"; };
 		782CB9A720B00FDC00143E0B /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
@@ -46,6 +49,12 @@
 		EF63F6832133DE6200CD6A5B /* AppleMusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicController.swift; sourceTree = "<group>"; };
 		EF63F6852134DD2900CD6A5B /* MaskTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskTransition.swift; sourceTree = "<group>"; };
 		EF63F6882134E35B00CD6A5B /* MaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
+		EF64F5BE21363B2800854F27 /* OrderListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListController.swift; sourceTree = "<group>"; };
+		EF64F5C021363C1A00854F27 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		EF64F5C121363C1A00854F27 /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		EFAD53DE21378ADE002AA253 /* UIView+Appearce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Appearce.swift"; sourceTree = "<group>"; };
+		EFAD53E021378F70002AA253 /* OrderDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailController.swift; sourceTree = "<group>"; };
+		EFAD53E22137D07F002AA253 /* FlipTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipTransition.swift; sourceTree = "<group>"; };
 		EFD0A271212FFEFC0074BC4A /* KeyframeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyframeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +89,7 @@
 		782CB98A20AD4C0900143E0B /* ViewControllerTransition */ = {
 			isa = PBXGroup;
 			children = (
+				EFAD53DD21378AB0002AA253 /* Extension */,
 				EFD0A270212FFEFC0074BC4A /* Aimation */,
 				EFD0A24F212F9CE80074BC4A /* Interaction */,
 				782CB9AB20B0123700143E0B /* Info.plist */,
@@ -91,6 +101,7 @@
 				EFFF5D91211D837100EEE719 /* Modal */,
 				EF63F6872134E31900CD6A5B /* Mask */,
 				EF63F6822133DE3200CD6A5B /* AppleMusic */,
+				EF64F5BD21363AEA00854F27 /* ShowDetail */,
 			);
 			path = ViewControllerTransition;
 			sourceTree = "<group>";
@@ -99,9 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				782CB99E20AD507400143E0B /* ModalAnimator.swift */,
-				782CB9A020AD58F500143E0B /* BaseAnimator.swift */,
 				EF63F6802133D4F000CD6A5B /* ModalTransition.swift */,
 				EF63F6852134DD2900CD6A5B /* MaskTransition.swift */,
+				EFAD53E22137D07F002AA253 /* FlipTransition.swift */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
@@ -129,6 +140,25 @@
 				EF63F6882134E35B00CD6A5B /* MaskViewController.swift */,
 			);
 			path = Mask;
+			sourceTree = "<group>";
+		};
+		EF64F5BD21363AEA00854F27 /* ShowDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EF64F5BE21363B2800854F27 /* OrderListController.swift */,
+				EF64F5C021363C1A00854F27 /* OrderCell.swift */,
+				EF64F5C121363C1A00854F27 /* OrderCell.xib */,
+				EFAD53E021378F70002AA253 /* OrderDetailController.swift */,
+			);
+			path = ShowDetail;
+			sourceTree = "<group>";
+		};
+		EFAD53DD21378AB0002AA253 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFAD53DE21378ADE002AA253 /* UIView+Appearce.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		EFD0A24F212F9CE80074BC4A /* Interaction */ = {
@@ -192,7 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = ShengLing;
 				TargetAttributes = {
 					782CB98720AD4C0900143E0B = {
@@ -226,8 +256,8 @@
 			files = (
 				782CB99620AD4C0900143E0B /* LaunchScreen.storyboard in Resources */,
 				782CB9AA20B011C200143E0B /* Default-568h@2x.png in Resources */,
+				EF64F5C321363C1A00854F27 /* OrderCell.xib in Resources */,
 				782CB99320AD4C0900143E0B /* Assets.xcassets in Resources */,
-				782CB9AC20B0123700143E0B /* Info.plist in Resources */,
 				782CB99120AD4C0900143E0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,17 +271,21 @@
 			files = (
 				EF518547212695E400724A4A /* DetailController.swift in Sources */,
 				782CB9A620AFF1F000143E0B /* AlphaAnimatorViewController.swift in Sources */,
+				EFAD53E121378F70002AA253 /* OrderDetailController.swift in Sources */,
 				EFD0A272212FFEFC0074BC4A /* KeyframeAnimation.swift in Sources */,
 				782CB9A820B00FDC00143E0B /* TitleCell.swift in Sources */,
 				782CB99F20AD507400143E0B /* ModalAnimator.swift in Sources */,
+				EFAD53DF21378ADE002AA253 /* UIView+Appearce.swift in Sources */,
 				782CB98E20AD4C0900143E0B /* ViewController.swift in Sources */,
 				EF63F6862134DD2900CD6A5B /* MaskTransition.swift in Sources */,
+				EF64F5C221363C1A00854F27 /* OrderCell.swift in Sources */,
 				782CB98C20AD4C0900143E0B /* AppDelegate.swift in Sources */,
+				EF64F5BF21363B2800854F27 /* OrderListController.swift in Sources */,
 				782CB9A320AEC4F200143E0B /* TableViewDataSource.swift in Sources */,
 				EF63F6812133D4F000CD6A5B /* ModalTransition.swift in Sources */,
 				EF63F6842133DE6200CD6A5B /* AppleMusicController.swift in Sources */,
 				EF63F6892134E35B00CD6A5B /* MaskViewController.swift in Sources */,
-				782CB9A120AD58F500143E0B /* BaseAnimator.swift in Sources */,
+				EFAD53E32137D07F002AA253 /* FlipTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +325,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -298,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -325,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -348,6 +384,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -355,6 +392,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -376,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

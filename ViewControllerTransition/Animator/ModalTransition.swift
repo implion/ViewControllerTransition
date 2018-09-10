@@ -102,7 +102,7 @@ extension ModalTransition: UIViewControllerAnimatedTransitioning {
         
         UIView.animate(withDuration: duration,
                        delay: 0.0,
-                       usingSpringWithDamping: 100,
+                       usingSpringWithDamping: 1,
                        initialSpringVelocity: 10,
                        options: .allowUserInteraction,
                        animations: {
